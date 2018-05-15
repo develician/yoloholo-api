@@ -8,4 +8,5 @@ plan.post('/', planCtrl.save);
 plan.get('/', planCtrl.getPlanLists);
 plan.patch('/', planCtrl.updateDetailPlan);
 plan.get('/:id', planCtrl.getDetailPlanList);
+
 module.exports = plan;

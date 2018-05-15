@@ -2,6 +2,7 @@ const Plan = require('models/plan');
 const { ObjectId } = require('mongoose').Types;
 
 exports.save = async(ctx) => {
+    console.log("visited");
     const {
         username,
         title,
@@ -33,6 +34,7 @@ exports.save = async(ctx) => {
 }
 
 exports.getPlanLists = async(ctx) => {
+    console.log("visited");
 
     const number = parseInt(ctx.query.number || 1, 10);
 
